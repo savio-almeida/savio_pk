@@ -1,7 +1,15 @@
-library savio_pk;
+class Abastecimento {
+  double valorTotal;
+  double quantidadeLitros;
+  int quilometragemRodada;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+  Abastecimento(
+    this.valorTotal,
+    this.quantidadeLitros,
+    this.quilometragemRodada,
+  );
+
+  double autonomia(){
+    return quilometragemRodada / quantidadeLitros;
+  }
 }
